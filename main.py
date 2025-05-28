@@ -7,9 +7,9 @@ app = FastAPI()
 class TicketRequest(BaseModel):
     ticket: str
 
-@app.get("/")
-def health_check():
-    return {"status": "ok", "message": "API is up and running"}
+# @app.get("/")
+# def health_check():
+#     return {"status": "ok", "message": "API is up and running"}
 
 
 @app.post("/add-ticket")
